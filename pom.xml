@@ -16,7 +16,9 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-
+  <scm>
+    <connection>scm:git:ssh://git@github.com/aloknath1/simple-java-maven.git</connection>
+  </scm>
      
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -73,15 +75,15 @@
     </plugins>
   </build>
 
- <!-- 
+ 
   <distributionManagement>
     <repository>
-      <id>internal.repo</id>
-      <name>MyCo Internal Repository</name>
-      <url>Host to Company Repository</url>
+      <id>raks-local</id>
+      <name>mvn-raks-release</name>
+      <url>https://localhost:8081/artifactory/mvn-raks-release/</url>
     </repository>
   </distributionManagement> 
-  -->
+
 </project>
   <!-- <distributionManagement>
     <repository>
